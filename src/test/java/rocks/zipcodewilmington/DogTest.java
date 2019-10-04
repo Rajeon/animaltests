@@ -25,7 +25,7 @@ public class DogTest {
     @Test
     public void speakTest(){
         Dog dog = new Dog(null,null,null);
-        String expected = "Bart";
+        String expected = "bark!";
         String actual = dog.speak();
         Assert.assertEquals(expected,actual);
     }
@@ -51,7 +51,7 @@ public class DogTest {
     // TODO - Create tests for `void eat(Food food)`
     @Test
     public void getIdTest(){
-        Dog dog = new Dog(null,null,null);
+        Dog dog = new Dog(null,null,2);
         int expected = 2;
         int actual = dog.getId();
         Assert.assertEquals(expected,actual);
